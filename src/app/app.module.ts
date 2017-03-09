@@ -3,12 +3,14 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NewPageExamplePage } from '../pages/new-page-example/new-page-example';
+import { RestApiExamplePage } from '../pages/rest-api-example/rest-api-example';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    NewPageExamplePage
+    NewPageExamplePage,
+    RestApiExamplePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +19,8 @@ import { NewPageExamplePage } from '../pages/new-page-example/new-page-example';
   entryComponents: [
     MyApp,
     HomePage,
-    NewPageExamplePage
+    NewPageExamplePage,
+    RestApiExamplePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

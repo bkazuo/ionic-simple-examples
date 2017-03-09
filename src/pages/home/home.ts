@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { NewPageExamplePage } from '../new-page-example/new-page-example';
+import { RestApiExamplePage } from '../rest-api-example/rest-api-example';
 
 @Component({
   selector: 'page-home',
@@ -17,5 +18,9 @@ export class HomePage {
   newPageExample(string){
   	// console.log(string);
   	this.navCtrl.push(NewPageExamplePage, {text: string});
+  }
+
+  restApiExample(){
+  	this.navCtrl.push(RestApiExamplePage);
   }
 }
