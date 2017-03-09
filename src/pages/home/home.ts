@@ -5,6 +5,7 @@ import { NavController } from 'ionic-angular';
 import { NewPageExamplePage } from '../new-page-example/new-page-example';
 import { RestApiExamplePage } from '../rest-api-example/rest-api-example';
 import { GeolocationExamplePage } from '../geolocation-example/geolocation-example';
+import { StorageExamplePage } from '../storage-example/storage-example';
 
 @Component({
   selector: 'page-home',
@@ -27,5 +28,9 @@ export class HomePage {
 
   geolocationExample(){
     this.navCtrl.push(GeolocationExamplePage);
+  }
+
+  storageExample(){
+    this.navCtrl.push(StorageExamplePage);
   }
 }
