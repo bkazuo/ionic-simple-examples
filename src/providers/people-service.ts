@@ -10,8 +10,6 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class PeopleService {
-
-	
 	data: any;
  
   constructor(private http: Http) {
@@ -19,11 +17,6 @@ export class PeopleService {
   }
  
   load() {
-  	// console.log(this.http.get('https://randomuser.me/api/'));
-   //  if (this.data) {
-   //    return Promise.resolve(this.data);
-   //  }
- 
     return new Promise(resolve => {
       this.http.get('https://randomuser.me/api/?results=20')
         .map(res => res.json())
@@ -33,19 +26,4 @@ export class PeopleService {
         });
     });
   }
-
-
-
-
-
-	// data: any;
-
- //  constructor(public http: Http) {
- //  	this.data = null;
- //  }
-
- //  load(){
- //    // console.log(this.http.get('https://randomuser.me/api/?results=10'));
- //  }
-
 }
