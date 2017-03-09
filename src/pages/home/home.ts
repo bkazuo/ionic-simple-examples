@@ -6,6 +6,7 @@ import { NewPageExamplePage } from '../new-page-example/new-page-example';
 import { RestApiExamplePage } from '../rest-api-example/rest-api-example';
 import { GeolocationExamplePage } from '../geolocation-example/geolocation-example';
 import { StorageExamplePage } from '../storage-example/storage-example';
+import { DeviceExamplePage } from '../device-example/device-example';
 
 @Component({
   selector: 'page-home',
@@ -32,5 +33,9 @@ export class HomePage {
 
   storageExample(){
     this.navCtrl.push(StorageExamplePage);
+  }
+
+  deviceExample(){
+    this.navCtrl.push(DeviceExamplePage);
   }
 }

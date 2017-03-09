@@ -8,6 +8,8 @@ import { NewPageExamplePage } from '../pages/new-page-example/new-page-example';
 import { RestApiExamplePage } from '../pages/rest-api-example/rest-api-example';
 import { GeolocationExamplePage } from '../pages/geolocation-example/geolocation-example';
 import { StorageExamplePage } from '../pages/storage-example/storage-example';
+import { DeviceExamplePage } from '../pages/device-example/device-example';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { StorageExamplePage } from '../pages/storage-example/storage-example';
     NewPageExamplePage,
     RestApiExamplePage,
     GeolocationExamplePage,
-    StorageExamplePage
+    StorageExamplePage,
+    DeviceExamplePage
 
   ],
   imports: [
@@ -30,7 +33,8 @@ import { StorageExamplePage } from '../pages/storage-example/storage-example';
     NewPageExamplePage,
     RestApiExamplePage,
     GeolocationExamplePage,
-    StorageExamplePage
+    StorageExamplePage,
+    DeviceExamplePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
