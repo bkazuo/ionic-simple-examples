@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 
 import { NewPageExamplePage } from '../new-page-example/new-page-example';
 import { RestApiExamplePage } from '../rest-api-example/rest-api-example';
+import { GeolocationExamplePage } from '../geolocation-example/geolocation-example';
 
 @Component({
   selector: 'page-home',
@@ -22,5 +23,9 @@ export class HomePage {
 
   restApiExample(){
   	this.navCtrl.push(RestApiExamplePage);
+  }
+
+  geolocationExample(){
+    this.navCtrl.push(GeolocationExamplePage);
   }
 }

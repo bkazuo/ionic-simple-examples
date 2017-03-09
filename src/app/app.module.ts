@@ -4,13 +4,16 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NewPageExamplePage } from '../pages/new-page-example/new-page-example';
 import { RestApiExamplePage } from '../pages/rest-api-example/rest-api-example';
+import { GeolocationExamplePage } from '../pages/geolocation-example/geolocation-example';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     NewPageExamplePage,
-    RestApiExamplePage
+    RestApiExamplePage,
+    GeolocationExamplePage
+    
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,7 +23,8 @@ import { RestApiExamplePage } from '../pages/rest-api-example/rest-api-example';
     MyApp,
     HomePage,
     NewPageExamplePage,
-    RestApiExamplePage
+    RestApiExamplePage,
+    GeolocationExamplePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
