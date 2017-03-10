@@ -9,6 +9,7 @@ import { RestApiExamplePage } from '../pages/rest-api-example/rest-api-example';
 import { GeolocationExamplePage } from '../pages/geolocation-example/geolocation-example';
 import { StorageExamplePage } from '../pages/storage-example/storage-example';
 import { DeviceExamplePage } from '../pages/device-example/device-example';
+import { DatabaseExamplePage } from '../pages/database-example/database-example';
 
 
 @NgModule({
@@ -19,8 +20,8 @@ import { DeviceExamplePage } from '../pages/device-example/device-example';
     RestApiExamplePage,
     GeolocationExamplePage,
     StorageExamplePage,
-    DeviceExamplePage
-
+    DeviceExamplePage,
+    DatabaseExamplePage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -34,7 +35,8 @@ import { DeviceExamplePage } from '../pages/device-example/device-example';
     RestApiExamplePage,
     GeolocationExamplePage,
     StorageExamplePage,
-    DeviceExamplePage
+    DeviceExamplePage,
+    DatabaseExamplePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
